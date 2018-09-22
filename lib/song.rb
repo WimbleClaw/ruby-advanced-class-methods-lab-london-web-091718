@@ -30,6 +30,6 @@ class Song
     song_name = self.all.select do |song|
       song.name == name
     end
-    song_name.to_s
+    song_name.join
   end
 end
