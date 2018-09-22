@@ -28,7 +28,7 @@ class Song
 
   def self.find_by_name(name)
     binding.pry
-    self.all.map do |song|
+    self.all.select do |song|
       song.name == name
     end
   end
