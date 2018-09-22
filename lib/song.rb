@@ -25,4 +25,12 @@ class Song
   def self.create_by_name(name)
     self.new_by_name(name)
   end
+
+  def self.find_by_name(name)
+    self.all.collect do |song|
+      song.name == name
+      name
+  end
 end
+
+
