@@ -17,7 +17,7 @@ class Song
   end
 
   def self.new_by_name(name)
-    binding.pry
+    self.create
     self.all.collect do |song|
       song.name == name
     end
