@@ -17,9 +17,7 @@ class Song
   end
 
   def self.new_by_name(name)
-    self.create
-    self.all.collect do |song|
-      song.name == name
-    end
+    song = self.create
+    song.name = name
   end
 end
