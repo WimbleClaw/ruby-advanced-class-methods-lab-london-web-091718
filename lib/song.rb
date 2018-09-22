@@ -30,7 +30,6 @@ class Song
     self.all.collect do |song|
       song.name == name
       name
+    end
   end
 end
-
-
